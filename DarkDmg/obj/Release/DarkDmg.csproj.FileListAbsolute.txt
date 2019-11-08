@@ -1,0 +1,13 @@
+C:\Users\Scott\source\repos\DarkDmg\DarkDmg\bin\Release\DarkDmg.exe.config
+C:\Users\Scott\source\repos\DarkDmg\DarkDmg\bin\Release\DarkDmg.exe
+C:\Users\Scott\source\repos\DarkDmg\DarkDmg\bin\Release\DarkDmg.pdb
+C:\Users\Scott\source\repos\DarkDmg\DarkDmg\obj\Release\MainWindow.g.cs
+C:\Users\Scott\source\repos\DarkDmg\DarkDmg\obj\Release\App.g.cs
+C:\Users\Scott\source\repos\DarkDmg\DarkDmg\obj\Release\DarkDmg_MarkupCompile.cache
+C:\Users\Scott\source\repos\DarkDmg\DarkDmg\obj\Release\DarkDmg_MarkupCompile.lref
+C:\Users\Scott\source\repos\DarkDmg\DarkDmg\obj\Release\MainWindow.baml
+C:\Users\Scott\source\repos\DarkDmg\DarkDmg\obj\Release\DarkDmg.g.resources
+C:\Users\Scott\source\repos\DarkDmg\DarkDmg\obj\Release\DarkDmg.Properties.Resources.resources
+C:\Users\Scott\source\repos\DarkDmg\DarkDmg\obj\Release\DarkDmg.csproj.GenerateResource.cache
+C:\Users\Scott\source\repos\DarkDmg\DarkDmg\obj\Release\DarkDmg.exe
+C:\Users\Scott\source\repos\DarkDmg\DarkDmg\obj\Release\DarkDmg.pdb
