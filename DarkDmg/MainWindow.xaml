@@ -5,29 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DarkDmg"
         mc:Ignorable="d"
-        Title="DarkDmg" Height="460" Width="800" ResizeMode="CanMinimize">
+        Title="DarkDmg" Height="460" Width="1100" ResizeMode="CanMinimize">
     <Grid Background="Black">
-        <Image Source="/Bin/Debug/Untitled.png" VerticalAlignment="Bottom"></Image>
-        <TextBlock FontSize="38" TextAlignment="Center" Foreground="#610804"  Width="260" Height="50" HorizontalAlignment="Left" Margin="10,0,0,370"  Text="Base Damage" VerticalAlignment="Bottom" FontFamily="Malgun Gothic" FontWeight="Bold"/>
+        <Image Source="/Bin/Debug/Untitled.png" VerticalAlignment="Bottom" HorizontalAlignment="Left"></Image>
+        <TextBlock FontSize="38" TextAlignment="Left" Foreground="#610804"  Width="470" Height="50" HorizontalAlignment="Left" Margin="10,0,0,370"  Text="Base Damage  PROT" VerticalAlignment="Bottom" FontFamily="Malgun Gothic" FontWeight="Bold"/>
         <TextBox x:Name="BaseDamage" KeyDown="Move_KeyDown" Foreground="White" Background="Black" Text="6-12" TextAlignment="Center" HorizontalAlignment="Left" Height="30" Margin="65,0,0,330" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="140" FontSize="20"/>
         <Button HorizontalAlignment="Left" BorderBrush="Black" Background="Black" Margin="40,0,0,15" VerticalAlignment="Bottom" Width="175" Height="70" Click="Button_Click">
             <Image Source="/Bin/Debug/Untitled2.png" />
         </Button>
 
-        <StackPanel Orientation="Horizontal" Width="510" Height="50" Margin="0,0,10,320" HorizontalAlignment="Right" VerticalAlignment="Bottom">
-            <TextBox KeyDown="Move_KeyDown" Foreground="White" Background="Black" x:Name="Move1" Text="1.00" Margin="0,0,10,0" Height="30" Width="120" FontSize="20" TextAlignment="Center"></TextBox>
-            <TextBox KeyDown="Move_KeyDown" Foreground="White" Background="Black" x:Name="Move2" Text ="0.60" Margin="0,0,10,0" Height="30" Width="120" FontSize="20" TextAlignment="Center"></TextBox>
-            <TextBox KeyDown="Move_KeyDown" Foreground="White" Background="Black" x:Name="Move3" Text="0.50" Margin="0,0,10,0" Height="30" Width="120" FontSize="20" TextAlignment="Center"></TextBox>
-            <TextBox KeyDown="Move_KeyDown" Foreground="White" Background="Black" x:Name="Move4" Text="1.50" Margin="0,0,0,0" Height="30" Width="120" FontSize="20" TextAlignment="Center"></TextBox>
+        <StackPanel Orientation="Horizontal" Width="710" Height="50" Margin="0,0,10,310" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <TextBox KeyDown="Move_KeyDown" Foreground="White" Background="Black" x:Name="Move1" Text="1.00" Margin="25,0,0,0" Height="30" Width="120" FontSize="20" TextAlignment="Center"></TextBox>
+            <TextBox KeyDown="Move_KeyDown" Foreground="White" Background="Black" x:Name="Move2" Text ="0.60" Margin="60,0,0,0" Height="30" Width="120" FontSize="20" TextAlignment="Center"></TextBox>
+            <TextBox KeyDown="Move_KeyDown" Foreground="White" Background="Black" x:Name="Move3" Text="0.50" Margin="60,0,0,0" Height="30" Width="120" FontSize="20" TextAlignment="Center"></TextBox>
+            <TextBox KeyDown="Move_KeyDown" Foreground="White" Background="Black" x:Name="Move4" Text="1.50" Margin="60,0,0,0" Height="30" Width="120" FontSize="20" TextAlignment="Center"></TextBox>
         </StackPanel>
         
         <StackPanel Margin="0,0,0,10" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
-            <TextBox x:Name="Result1" Background="Black" Foreground="White" Height="300" Margin="0,0,10,0" TextWrapping="Wrap" Text="" Width="120" FontSize="16" IsReadOnly="True"/>
-            <TextBox x:Name="Result2" Background="Black" Foreground="White" Height="300" Margin="0,0,10,0" TextWrapping="Wrap" Text="" Width="120" FontSize="16" IsReadOnly="True"/>
-            <TextBox x:Name="Result3" Background="Black" Foreground="White" Height="300" Margin="0,0,10,0" TextWrapping="Wrap" Text="" Width="120" FontSize="16" IsReadOnly="True"/>
-            <TextBox x:Name="Result4" Background="Black" Foreground="White" Height="300" Margin="0,0,10,0" TextWrapping="Wrap" Text="" Width="120" FontSize="16" IsReadOnly="True"/>
+            <TextBox x:Name="Result1" Background="Black" Foreground="White" Height="300" Margin="0,0,10,0" TextWrapping="Wrap" Text="" Width="170" FontSize="16" IsReadOnly="True"/>
+            <TextBox x:Name="Result2" Background="Black" Foreground="White" Height="300" Margin="0,0,10,0" TextWrapping="Wrap" Text="" Width="170" FontSize="16" IsReadOnly="True"/>
+            <TextBox x:Name="Result3" Background="Black" Foreground="White" Height="300" Margin="0,0,10,0" TextWrapping="Wrap" Text="" Width="170" FontSize="16" IsReadOnly="True"/>
+            <TextBox x:Name="Result4" Background="Black" Foreground="White" Height="300" Margin="0,0,10,0" TextWrapping="Wrap" Text="" Width="170" FontSize="16" IsReadOnly="True"/>
         </StackPanel>
-        <TextBlock FontSize="38" TextAlignment="Center" Foreground="#610804"  Width="510" Height="50" HorizontalAlignment="Right" Margin="0,0,10,370" TextWrapping="Wrap" Text="Skill Damage Modifiers" VerticalAlignment="Bottom" FontFamily="Malgun Gothic" FontWeight="Bold"/>
+        <TextBlock FontSize="38" TextAlignment="Center" Foreground="#610804"  Width="710" Height="50" HorizontalAlignment="Right" Margin="0,0,10,370" TextWrapping="Wrap" Text="Skill Damage Modifiers" VerticalAlignment="Bottom" FontFamily="Malgun Gothic" FontWeight="Bold"/>
+        <TextBox x:Name="EnemyProt" KeyDown="Move_KeyDown" Foreground="White" Background="Black" Text="0" TextAlignment="Center" HorizontalAlignment="Left" Height="30" Margin="305,0,0,340" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="50" FontSize="20"/>
 
 
     </Grid>
