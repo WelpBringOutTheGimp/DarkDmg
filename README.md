@@ -1,7 +1,7 @@
 # DarkDmg
 DarkDmg is a damage calc for Darkest Dungeon.
 
-DarkDmg's function is to show a Hero's damage output across 4 skills at every +5% DMG breakpoint from trinkets/quirks. It also shows KO percentage with the option of including an enemy's PROT in the calculation.
+DarkDmg's function is to show a Hero's damage output across 4 skills at every +5% DMG breakpoint from trinkets/quirks. It also includes an enemy's PROT/HP in the calculation and shows Knockout %.
 
 ![Alt text](https://raw.githubusercontent.com/WelpBringOutTheGimp/DarkDmg/master/example.png)
 
