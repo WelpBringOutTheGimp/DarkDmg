@@ -11,4 +11,3 @@ C:\Users\Scott\source\repos\DarkDmg\DarkDmg\obj\Debug\DarkDmg.Properties.Resourc
 C:\Users\Scott\source\repos\DarkDmg\DarkDmg\obj\Debug\DarkDmg.csproj.GenerateResource.cache
 C:\Users\Scott\source\repos\DarkDmg\DarkDmg\obj\Debug\DarkDmg.exe
 C:\Users\Scott\source\repos\DarkDmg\DarkDmg\obj\Debug\DarkDmg.pdb
-C:\Users\Scott\source\repos\DarkDmg\DarkDmg\obj\Debug\DarkDmg.csprojAssemblyReference.cache

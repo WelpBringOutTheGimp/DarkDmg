@@ -38,6 +38,16 @@ namespace DarkDmg
             }
             else return 0;
         }
+        public string KOpercent(List<decimal> dmglist,decimal monHP)
+        {
+            decimal lethal = 0;
+            foreach (int dmg in dmglist)
+            {
+                if (dmg >= monHP)
+                    lethal++;
+            }
+            return "KO=" + Decimal.Round(lethal / dmglist.Count * 100, 1).ToString() + "%";
+        }
         public void GetOutput()
         {
             try
@@ -52,6 +62,7 @@ namespace DarkDmg
                 int maxDmg = Convert.ToInt32(Regex.Match(BaseDamage.Text, @"(?<=\D+)\d+$").ToString());
 
                 decimal protection = Convert.ToDecimal(Regex.Match(EnemyProt.Text, @"\d+$").ToString()) / 100;
+                decimal monsterHP = Convert.ToDecimal(HPinput.Text);
                 decimal trinket = 1;
 
                 List<int> baserange = Enumerable.Range(minDmg, (maxDmg - minDmg + 1)).ToList();
@@ -63,17 +74,17 @@ namespace DarkDmg
                 
 
 
-                for (int x = 0; x <= 20; x++)
+                for (int x = 0; x <= 30; x++)
                 {
                     List<decimal> dmgcalc1 = Calc(baserange, modifier1, trinket, protection);
                     List<decimal> dmgcalc2 = Calc(baserange, modifier2, trinket, protection);
                     List<decimal> dmgcalc3 = Calc(baserange, modifier3, trinket, protection);
                     List<decimal> dmgcalc4 = Calc(baserange, modifier4, trinket, protection);
 
-                    Result1.Text += $" {dmgcalc1[0]}-{dmgcalc1[dmgcalc1.Count - 1]} +{dmgpercent(dmgcalc1, basemodified1)}% (x{trinket}) \n";
-                    Result2.Text += $" {dmgcalc2[0]}-{dmgcalc2[dmgcalc2.Count - 1]} +{dmgpercent(dmgcalc2, basemodified2)}% (x{trinket}) \n";
-                    Result3.Text += $" {dmgcalc3[0]}-{dmgcalc3[dmgcalc3.Count - 1]} +{dmgpercent(dmgcalc3, basemodified3)}% (x{trinket}) \n";
-                    Result4.Text += $" {dmgcalc4[0]}-{dmgcalc4[dmgcalc4.Count - 1]} +{dmgpercent(dmgcalc4, basemodified4)}% (x{trinket}) \n";
+                    Result1.Text += $" {dmgcalc1[0]}-{dmgcalc1[dmgcalc1.Count - 1]} +{dmgpercent(dmgcalc1, basemodified1)}% (x{trinket}) {KOpercent(dmgcalc1,monsterHP)} \n";
+                    Result2.Text += $" {dmgcalc2[0]}-{dmgcalc2[dmgcalc2.Count - 1]} +{dmgpercent(dmgcalc2, basemodified2)}% (x{trinket}) {KOpercent(dmgcalc2,monsterHP)} \n";
+                    Result3.Text += $" {dmgcalc3[0]}-{dmgcalc3[dmgcalc3.Count - 1]} +{dmgpercent(dmgcalc3, basemodified3)}% (x{trinket}) {KOpercent(dmgcalc3,monsterHP)} \n";
+                    Result4.Text += $" {dmgcalc4[0]}-{dmgcalc4[dmgcalc4.Count - 1]} +{dmgpercent(dmgcalc4, basemodified4)}% (x{trinket}) {KOpercent(dmgcalc4,monsterHP)} \n";
 
                     trinket += (decimal)0.05;
                 }
